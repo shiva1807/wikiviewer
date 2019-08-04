@@ -1,0 +1,66 @@
+body{
+    text-align: center;
+    background-color: #032535;
+    margin: 7% 5%;
+    line-height: 2;
+    color: white;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    padding: 0 0 2rem;
+    color: white;
+}
+
+
+input{
+    background-color: rgba(0, 0, 0, 0.74);
+    border: 3px solid white;
+    border-radius: 30px;
+    text-align: center;
+    width: 50%;
+    height: 3rem;
+    padding: 2px 0 2px;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    left: 1.5rem;
+    outline: none;
+    color: white; 
+}
+@media (max-width: 768px){
+    h1{text-align: center;
+        font-size: 1.5rem;
+        padding: 0 0 1rem;
+    }
+
+    input{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+.btn{
+    size: 10rem;
+    border-radius: 100%;
+    position: relative;
+    left: 3rem;
+}
+
+.random{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+.random:hover{
+    text-decoration: none;
+    color: white;
+}
+.search-results{
+    text-align: left;
+    margin:2px 20px 2px;
+    padding: 20px;
+    
+}
