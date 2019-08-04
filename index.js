@@ -3,14 +3,19 @@ let arrayOfHeadings=[]
 let arrayofInfo=[]
 let arrayOfLinks=[]
 document.querySelector("body > form > button").addEventListener("click",function(event){
-  event.preventDefault();
-  document.querySelector("body > p").innerHTML="";
+  document.querySelector("body > .wikiresults").innerHTML="";
   input = document.querySelector("body > form > input").value
   
   wikiFunction(input);
 });
 
-
+document.querySelector("body > form").addEventListener("submit",function(event){
+  event.preventDefault();
+  document.querySelector("body > .wikiresults").innerHTML="";
+  input = document.querySelector("body > form > input").value
+  
+  wikiFunction(input);
+});
 
 wikiFunction =(searchInput)=>{
   $.ajax({
