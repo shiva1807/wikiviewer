@@ -29,7 +29,7 @@ wikiFunction =(searchInput)=>{
     }).then(()=>{
       console.log(arrayofInfo,arrayOfLinks,arrayOfHeadings)
       arrayofInfo.forEach((ele,index)=>{
-        document.querySelector(".wikiresults").innerHTML+=`<div class="search-results"><p><h3>`+arrayOfHeadings[index]+"</h3><h5>"+ele+"</h5><h6>"+`<a href="arrayOfLinks[index]">`+'Click to read more'+`</a>`+"</h6></p></div>";
+        document.querySelector(".wikiresults").innerHTML+=`<div class="search-results"><p><h3>`+arrayOfHeadings[index]+`</h3><h5>`+ele+`</h5><h6><a target="blank" href="`+arrayOfLinks[index]+`">Click to read more</a></h6></p></div>`;
         document.querySelectorAll(".search-results")[index].style.border="1px solid #407088";
     })     
     });
